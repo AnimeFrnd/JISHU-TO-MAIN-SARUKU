@@ -9,11 +9,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     if data == "about":
         await query.message.edit_text(
             text = (
-                "<b><blockquote>❃ 💓 ᴏᴡɴᴇʀ (ᴀʀʏᴀ) : <a href='https://t.me/Arya_Bro'>ᴀʀʏᴀ ʙʀᴏ❤‍🔥</a>\n"
-                "❃ 🫡ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href='https://t.me/Telugu_movies_999'>ᴛᴇʟᴜɢᴜᴍᴏᴠɪᴇs𝟿𝟿𝟿 ❣️</a>\n"
+                "<b><blockquote>❃ 💓 ᴏᴡɴᴇʀ (ᴄᴜᴛɪᴇ❣️) : <a href='https://t.me/Nithya_Sree_Bot'>𝓝𝓲𝓽𝓱𝔂𝓪 𝓼𝓱𝓻𝓮𝓮 🥀🦋</a>\n"
+                "❃ 🫡ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href='https://t.me/Telugu_Saruku_Bitlu'>ᴛᴇʟᴜɢᴜ sᴀʀᴜᴋᴜ ʙɪᴛʟᴜ 🥵</a>\n"
                 "❃ 🥵 ʟ€@ᴋ$: <a href='https://t.me/+4QSB2tPk-ME2NDdl'>ᴄʟɢ ɢɪʀʟ ᴀɴᴅ ʟᴜᴠʀs 😛</a>\n"
                 "❃ 🔞 ᴀᴅᴜʟᴛ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/+aph6xGmeXgU2NzFl'>ᴀᴅᴜʟᴛ ᴍᴏᴠɪᴇs 🤤</a>\n"
-                "❃ 🌿ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ : <a href='https://t.me/+-duU_vRUZzswZDY1'>ɢʀᴏᴜᴘ 🫧</a>\n"
+                "❃ 🌝 ɪɴsᴛᴀ ʟᴇᴀᴋs: <a href='ʜᴛᴛᴘs://ᴛ.ᴍᴇ/+ғᴜʏ𝟹ʟᴊʀsᴊᴘɢ𝟶ɴɢɪ𝟷'> ɪɴsᴛᴀɢʀᴀᴍ 🫣 </a>\n"
+                "❃ 🌚 ᴄᴇʟᴇʙʀɪᴛɪᴇs ʟᴇᴀᴋs : <a href='https://t.me/+-duU_vRUZzswZDY1'>ʜᴇʀᴏɪɴᴇs 🫠 </a>\n"
                 "❃ 🫰 ғɪʟᴛᴇʀ ʙᴏᴛ : <a href='https://t.me/Aryas_Movies_Finder_bot'>ғɪʟᴛᴇʀ ʙᴏᴛ 🫶</a></blockquote></b>"
             ),
             disable_web_page_preview=True,  # ✅ Added missing comma
