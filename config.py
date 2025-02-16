@@ -15,7 +15,7 @@ def str_to_bool(value):
 
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-API_ID = get_int_env("API_ID", )
+API_ID = get_int_env("API_ID",7515868)
 API_HASH = os.environ.get("API_HASH", "")
 
 OWNER_ID = get_int_env("OWNER_ID", 6081617163)
