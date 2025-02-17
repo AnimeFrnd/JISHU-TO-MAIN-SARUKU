@@ -14,6 +14,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 "❃ 🥵 ʟ€@ᴋ$: <a href='https://t.me/+4QSB2tPk-ME2NDdl'>ᴄʟɢ ɢɪʀʟ ᴀɴᴅ ʟᴜᴠʀs 😛</a>\n"
                 "❃ 🔞 ᴀᴅᴜʟᴛ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/+aph6xGmeXgU2NzFl'>ᴀᴅᴜʟᴛ ᴍᴏᴠɪᴇs 🤤</a>\n"
                 "❃ 🌝 ɪɴsᴛᴀ ʟᴇᴀᴋs: <a href='ʜᴛᴛᴘs://ᴛ.ᴍᴇ/+ғᴜʏ𝟹ʟᴊʀsᴊᴘɢ𝟶ɴɢɪ𝟷'> ɪɴsᴛᴀɢʀᴀᴍ 🫣 </a>\n"
+                "❃ 🌚 ᴄᴇʟᴇʙʀɪᴛɪᴇs ʟᴇᴀᴋs : <a href='https://t.me/+-duU_vRUZzswZDY1'>ʜᴇʀᴏɪɴᴇs 🫠 </a>\n"
                 "❃ 🫰 ғɪʟᴛᴇʀ ʙᴏᴛ : <a href='https://t.me/Aryas_Movies_Finder_bot'>ғɪʟᴛᴇʀ ʙᴏᴛ 🫶</a></blockquote></b>"
             ),
             disable_web_page_preview=True,  # ✅ Added missing comma
