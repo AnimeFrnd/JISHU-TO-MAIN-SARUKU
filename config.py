@@ -2,20 +2,17 @@ import os
 import logging
 from logging.handlers import RotatingFileHandler
 
-
 def get_int_env(var_name, default):
     try:
         return int(os.environ.get(var_name, default))
     except ValueError:
         return default  # Fallback to default if conversion fails
 
-
 def str_to_bool(value):
     return str(value).lower() in ("true", "1", "yes")
 
-
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-API_ID = get_int_env("API_ID",7515868)
+API_ID = get_int_env("API_ID", 7515868)
 API_HASH = os.environ.get("API_HASH", "")
 
 OWNER_ID = get_int_env("OWNER_ID", 6081617163)
@@ -49,9 +46,10 @@ DISABLE_CHANNEL_BUTTON = str_to_bool(os.environ.get('DISABLE_CHANNEL_BUTTON', "T
 
 BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
-USER_REPLY_TEXT = '''</b>❌sᴏʀʀʏ మావా నువ్వు నా ᴏᴡɴᴇʀ కాదు..!😜\n\n❌Don't Send Me Messages Directly I'm Only File Share Bot ! \n\n 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 🌚 ➥ 「<a href="https://t.me/TELUGU_SARUKU_BITLU">𝙏𝙀𝙇𝙐𝙂𝙐 𝙎𝘼𝙍𝙐𝙆𝙐 𝘽𝙄𝙏𝙇𝙐 🥵</a>」</b>'''
+USER_REPLY_TEXT = "</b>❌సారీ మావా నువ్వు నా ᴏᴡɴᴇʀ కాదు..!😜\n\n❌Don't Send Me Messages Directly I'm Only File Share Bot ! \n\n 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 🌚 ➥ 「<a href='https://t.me/TELUGU_SARUKU_BITLU'>𝙏𝙀𝙇𝙐𝙂𝙐 𝙎𝘼𝙍𝙐𝙆𝙐 𝘽𝙄𝙏𝙇𝙐 🥵</a>」</b>"
 
-START_MSG = os.environ.get("START_MESSAGE", "<b><blockquote>Orey!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ! \n\n 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 🌚 ➥ 「<a href="https://t.me/TELUGU_SARUKU_BITLU">𝙏𝙀𝙇𝙐𝙂𝙐 𝙎𝘼𝙍𝙐𝙆𝙐 𝘽𝙄𝙏𝙇𝙐 🥵</a>」</a></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b><blockquote>Orey!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ! \n\n 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 🌚 ➥ 「<a href='https://t.me/TELUGU_SARUKU_BITLU'>𝙏𝙀𝙇𝙐𝙂𝙐 𝙎𝘼𝙍𝙐𝙆𝙐 𝘽𝙄𝙏𝙇𝙐 🥵</a>」</b>")
+
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE",
                            "Hello {mention}\n\n<b>ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʀᴇʟᴏᴀᴅ button ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛᴇᴅ ꜰɪʟᴇ. \n\n కింద ఇచ్చిన 4 చానెల్స్ లో జాయిన్ అయ్యి తరవాత Try Again క్లిక్ చేస్తే File📁 వస్తది..:) 🥰</b>")
 
@@ -67,7 +65,6 @@ logging.basicConfig(
     ]
 )
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
-
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
