@@ -49,7 +49,7 @@ DISABLE_CHANNEL_BUTTON = str_to_bool(os.environ.get('DISABLE_CHANNEL_BUTTON', "T
 
 BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
-USER_REPLY_TEXT = "***❌sᴏʀʀʏ మావా నువ్వు నా ᴏᴡɴᴇʀ కాదు..!😜\n\n❌Don't Send Me Messages Directly I'm Only File Share Bot ! \n\n 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 🌚 ➥ 「<a href="https://t.me/TELUGU_SARUKU_BITLU">𝙏𝙀𝙇𝙐𝙂𝙐 𝙎𝘼𝙍𝙐𝙆𝙐 𝘽𝙄𝙏𝙇𝙐 🥵</a>」***"
+USER_REPLY_TEXT = "***❌sᴏʀʀʏ మావా నువ్వు నా ᴏᴡɴᴇʀ కాదు..!😜\n\n❌Don't Send Me Messages Directly I'm Only File Share Bot ! \n\n 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 🌚 ➥ 「<a href="https://t.me/TELUGU_SARUKU_BITLU">𝙏𝙀𝙇𝙐𝙂𝙐 𝙎𝘼𝙍𝙐𝙆𝙐 𝘽𝙄𝙏𝙇𝙐 🥵</a>」***"""
 
 START_MSG = os.environ.get("START_MESSAGE", "<b><blockquote>Orey!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ! \n\n 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 🌚 ➥ 「<a href="https://t.me/TELUGU_SARUKU_BITLU">𝙏𝙀𝙇𝙐𝙂𝙐 𝙎𝘼𝙍𝙐𝙆𝙐 𝘽𝙄𝙏𝙇𝙐 🥵</a>」</a></b>")
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE",
