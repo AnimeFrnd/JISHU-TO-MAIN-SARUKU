@@ -1,7 +1,8 @@
-from pyrogram import __version__
-from bot import Bot
-from config import OWNER_ID
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+import unicodedata
+
+def sanitize_text(text: str) -> str:
+    # Remove non-UTF-8 characters by normalizing the string
+    return ''.join(c for c in text if unicodedata.category(c) != 'Cn')
 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
@@ -17,25 +18,23 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             "❃ 🫰 ғɪʟᴛᴇʀ ʙᴏᴛ : <a href='https://t.me/Aryas_Movies_Finder_bot'>ғɪʟᴛᴇʀ ʙᴏᴛ 🫶</a></blockquote></b>"
         )
 
+        sanitized_text = sanitize_text(text)
+
         try:
-            # Ensure the text is UTF-8 encoded
-            text.encode('utf-8')
+            await query.message.edit_text(
+                text=sanitized_text,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("🪿 Close", callback_data="close")
+                        ]
+                    ]
+                )
+            )
         except UnicodeEncodeError as e:
             print(f"Error encoding text: {e}")
-            # Handle encoding issue here, e.g., by removing problematic characters
-            text = text.replace("🦋", "")  # Example: Replace problematic characters (customize this as needed)
-        
-        await query.message.edit_text(
-            text=text,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("🪿 Close", callback_data="close")
-                    ]
-                ]
-            )
-        )
+            # You can further handle the encoding issue or log the error here.
     elif data == "close":
         await query.message.delete()
         try:
